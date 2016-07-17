@@ -14,7 +14,7 @@ However, you are free to use any other technologies, operating systems or any so
 
 3. Finally, setup a public ssh keypair in your Cloud9 instance and add those keys to GitHub. 
 **Note:** if the "clip" command to copy the SSH key to your clipboard in Step 4 of the GitHub instructions fails for you, then do this:
-
+  * ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
   * cat ~/.ssh/id_rsa.pub
   * This displays the contents of the file on the terminal. You can then select and copy the entire content starting from "ssh-rsa" including the key up to "your_email@example.com".
 
@@ -25,18 +25,18 @@ However, you are free to use any other technologies, operating systems or any so
 #Homework 1:
 
 ##1. String manipulation.
-Define a validate_email? method that takes an string as a parameter representing an email and return a boolean that represents if the parameter is a valid email. You should use a regular expression to validate the string since it will reduce the amount of work needed for the validation. Note: Run the rspec test and make sure that the test passes before submitting the code: $ rspec -e '#validate_email?' spec/part1a_spec.rb
-Implement a method is_palindrome? That returns true if a word or a phrase is palindrome: https://en.wikipedia.org/wiki/Palindrome
+* a) Define a validate_email? method that takes an string as a parameter representing an email and return a boolean that represents if the parameter is a valid email. You should use a regular expression to validate the string since it will reduce the amount of work needed for the validation. Note: Run the rspec test and make sure that the test passes before submitting the code: $ rspec -e '#validate_email?' spec/part1_spec.rb
+* b) Implement a method is_palindrome? That returns true if a word or a phrase is palindrome: https://en.wikipedia.org/wiki/Palindrome
 	Note: Run the rspec test and make sure that the test passes before 
-submitting the code: $ rspec -e '#is_palindrome?' spec/part1b_spec.rb
+submitting the code: $ rspec -e '#is_palindrome?' spec/part1_spec.rb
 
 ##2. Arrays and Hashes.
-Define a method max_sum_of_2 that takes 2 integer arrays as parameters, calculates the sum of all the elements of each array and returns the maximum number. If the maximum are the same, print a message saying “sums are equal” and return 0. For example: max_sum_of_2([2, 3, 4], [1, 2, 3]) should return 9 and max_sum_of_2([2, 6, 4], [3, 9]) should print the message and return 0.
+* a)Define a method max_sum_of_2 that takes 2 integer arrays as parameters, calculates the sum of all the elements of each array and returns the maximum number. If the maximum are the same, print a message saying “sums are equal” and return 0. For example: max_sum_of_2([2, 3, 4], [1, 2, 3]) should return 9 and max_sum_of_2([2, 6, 4], [3, 9]) should print the message and return 0.
 Note: Run the rspec test and make sure that the test passes before 
-submitting the code: $ rspec -e '#max_sum_of_2' spec/part2a_spec.rb
-Define a method word_frequency that takes an array of words as a parameter and return the most frequently word and the frequency (The word with the largest amount of occurrences in the array).
+submitting the code: $ rspec -e '#max_sum_of_2' spec/part2_spec.rb
+* b)Define a method word_frequency that takes an array of words as a parameter and return the most frequently word (The word with the largest amount of occurrences in the array). If 2 or more words have the max frequency, return any of them.
 Note: Run the rspec test and make sure that the test passes before 
-submitting the code: $ rspec -e '#word_frequency' spec/part2b_spec.rb
+submitting the code: $ rspec -e '#word_frequency' spec/part2_spec.rb
 
 ##3. Object Oriented Programming
 Define a class FileAnalizer that has the following: 
