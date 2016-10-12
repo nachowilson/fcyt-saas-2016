@@ -25,6 +25,9 @@ However, you are free to use any other technologies, operating systems or any so
 ## Setting up CodeAnywere
 
 #Homework 1:
+##Install dependencies:
+1. run **bundle install** (If it complains about the ruby version, edit the Gemfile and change the version number)
+2. If that does not work, run **gem install rspec** to install the rspec gem to run the unit tests.
 
 ##1. String manipulation.
 * a) Define a validate_email? method that takes an string as a parameter representing an email and return a boolean that represents if the parameter is a valid email. You should use a regular expression to validate the string since it will reduce the amount of work needed for the validation. Note: Run the rspec test and make sure that the test passes before submitting the code: $ rspec -e '#validate_email?' spec/part1_spec.rb
