@@ -45,10 +45,10 @@ submitting the code: $ rspec -e '#word_frequency' spec/part2_spec.rb
 
 ##3. Object Oriented Programming
 Define a class FileAnalizer that has the following: 
-* Private attributes:
+* Attributes:
   * file_name: An string containing the file name.
   * total_lines: An integer
 
 * Methods: 
   * calculate_total_lines => calculates the total number of lines of the file and assigns it to the total_lines varible.
-  * max_word_line => Returns a Hash that has one entry per line. Each element of the hash has a word as a key and the frequency as a number (You can reuse the method implemented before)
+  * max_word_line => Returns an Array that contains that max frequency word for each line. (You can reuse the method implemented before)
